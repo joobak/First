@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Page Title</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "맑은 고딕";
+        }
+
+        ul, ol, li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 1185px;
+            height: 160px;
+            margin: 0 auto;
+        }
+
+        #logo {
+            width: 170px;
+            height: 70px;
+            float: left;
+            margin: 0px 0 0 20px;
+        }
+
+        #login {
+            width: 295px;
+            height: 30px;
+            float: right;
+            margin: 20px 30px 0 0px;
+        }
+
+        #login ul {
+            font-size: 12px;
+            color: #666;
+        }
+
+        #login li {
+            float: left;
+            margin: 0 5px;
+        }
+
+        #login li a {
+            text-decoration: none;
+            color: #666;
+        }
+
+        header {
+            width: 1185px;
+            height: 160px;
+            margin: 0 auto;
+        }
+
+        nav {
+            width: 780px;
+            height: 40px;
+            float: right;
+            margin: 40px 0px 0 0px;
+        }
+
+        nav>ul {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        nav>ul>li {
+            float: left;
+            margin: 0 40px;
+        }
+
+        nav>ul>li>a {
+            text-decoration: none;
+            color: midnightblue;
+        }
+
+        nav>ul>li>a:hover {
+            color: mediumaquamarine;
+        }
+
+        #slider {
+            width: 1475px;
+            height: 560px;
+            margin: 0 auto;
+        }
+
+        #slider>img {
+            width: 20%;
+            height: 20%;
+        }
+
+        .banner-text {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 30px 0;
+            color: gray;
+        }
+
+        ul.product-list {
+            list-style: none;
+            padding: 0;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+        }
+
+        li.product-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            list-style-type: none;
+        }
+
+        li.product-item:hover {
+            transform: scale(1.05);
+        }
+
+        li.product-item img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .price {
+            font-size: 13px;
+            font-weight: bold;
+            color: gray;
+            margin: 18px 0;
+            margin-left: 150px;
+        }
+
+        footer {
+            background: #fff;
+            color: #666 padding 20px 0;
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        footer li a {
+            color: #666;
+            font-size: 12px;
+        }
+
+        footer {
+            width: 100%;
+            height: 145px;
+            border-top: 1px solid #666;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<header>
+    <div id="logo"><img src="img/logo.png"></div>
+    <div id="login">
+        <ul>
+            <li><a href="#">로그인</a></li>
+            <li>|</li>
+            <li><a href="#">회원가입</a></li>
+            <li>|</li>
+            <li><a href="#">Q & A </a></li>
+            <li>|</li>
+            <li><a href="#">LANGUAGE</a></li>
+        </ul>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">데크</a></li>
+            <li><a href="#">바인딩</a> </li>
+            <li><a href="#">고글/부츠/헬멧</a></li>
+            <li><a href="#">상품검색</a></li>
+            <li><a href="#">고객문의</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="slider">
+    <a href="#">
+        <img src="img/베너.jpg" alt="메인 배너">
+    </a>
+</div>
+
+<body>
+    <div class="banner-text">
+        <p>❄️ 25 / 26 시즌 신상품 ❄️</p>
+    </div>
+
+    <ul class="product-list">
+
+        <li class="product-item">
+            <a href="detail1.html"><img src="img/데크1.jpg" alt="상품1"></a>
+            <div class="price"> price: 19,900원</div>
+        </li>
+        <li class="product-item">
+            <a href="detail2.html"><img src="img/데크2.jpg" alt="상품2"></a>
+            <div class="price"> price: 29,900원</div>
+        </li>
+        <li class="product-item">
+            <a href="detail3.html"><img src="img/부츠1.jpg" alt="상품3"></a>
+            <div class="price"> price: 39,900원</div>
+        </li>
+        <li class="product-item">
+            <a href="detail4.html"><img src="img/부츠2.jpg" alt="상품4"></a>
+            <div class="price">price: 49,900원</div>
+        </li>
+
+        <li class="product-item">
+            <a href="detail5.html"><img src="img/바인딩.jpg" alt="상품5"></a>
+            <div class="price">price: 59,900원</div>
+        </li>
+        <li class="product-item">
+            <a href="detail6.html"><img src="img/헬멧.jpg" alt="상품6"></a>
+            <div class="price">price: 69,900원</div>
+        </li>
+        <li class="product-item">
+            <a href="detail7.html"><img src="img/장갑.jpg" alt="상품7"></a>
+            <div class="price">price: 79,900원</div>
+        </li>
+        <li class="product-item">
+            <a href="detail8.html"><img src="img/고글.jpg" alt="상품8"></a>
+            <div class="price">price: 89,900원</div>
+        </li>
+    </ul>
+
+    <footer>
+        <div id="box">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li>|</li>
+                <li><a href="#">BUSINESS PRACTICE OFFICE</a></li>
+                <li>|</li>
+                <li><a href="#">COPYRIGHT</a></li>
+                <li>|</li>
+                <li><a href="#">CONTACT US</a></li>
+                <li>|</li>
+                <li><a href="#">SITEMAP</a></li>
+                <li>|</li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li>|</li>
+                <li><a href="#"><a href="#">Fiat Chrysler Automobiles (FCA)</a></li>
+                <li>|</li>
+                <li><a href="#">Chrysler</a></li>
+                <li>|</li>
+                <li><a href="#">FIAT®</a></li>
+                <li>|</li>
+            </ul>
+        </div>
+</body>
+
+</html>
